@@ -1,5 +1,9 @@
 import { defineConfig } from 'astro/config';
 
+import preact from "@astrojs/preact";
+
 // https://astro.build/config
-export default defineConfig({});
-site: "https://astro-jomarone.netlify.app/"
+export default defineConfig({
+  integrations: [preact()]
+});
+site: "https://astro-jomarone.netlify.app/";
